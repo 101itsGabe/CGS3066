@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title> CGS3066: Home </title>
+<style>
+ html, body {
+   background-color: linen;
+   margin: 0 auto;
+ }
+ .container * {
+   text-align: center;
+   vertical-align: middle;
+ }
+ #submit {
+  background-color: green;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  width: 300px;
+  height: 50px;
+  cursor: pointer;
+ }
+ 
+ #submit:hover {
+  background-color: red;
+ }
+ 
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h2> Sign Up --- It's quick and easy </h2>
+  <form>
+    <label>First Name: </label> <input type="text" name="fname">
+    <label>Last Name: </label> <input type="text" name="lname"> <br><br>
+	<label> Address: </label> <textarea name="address" rows="3" cols="50"> </textarea> <br> <br>
+	<label> Email: </label> <input type="email" name="email" size="60" required> <br><br>
+	<label> Country: </label> 
+	<select>
+	   <option> Choose One </option>
+	   <option> United States </option>
+	   <option> United Kingdom </option>
+	   <option> Russia </option>
+	   <option> France </option>
+	   <option> Canada </option>
+	   <option> China </option>
+	</select>&emsp; 
+	<label> Mobile: </label> <input type="tel" name="phone" placeholder="999-999-9999"><br><br>
+   <label> User Name: </label> <input type="text" name="uname">&emsp;
+   <label> Password: </label> <input type="password" name="passwd"> <br><br>
+   <label> DOB: </label> <input type="date" name="dob">&emsp;
+   <label> Age: </label> <input type="number" name="age"> <br><br>
+   <label> Gender: </label> 
+      <input type="radio" name="gender"> Male
+	  <input type="radio" name="gender"> Female
+	  <input type="radio" name="gender"> Other <br><br>
+
+   <input type="checkbox" name="rule1" required> I agree to the Term, Conditions, and Cookie Policy. <br>   
+   <input type="checkbox" name="rule2"> I agree to the Email/Text and Notification Acceptance Policy. 
+   <br><br>
+   <input id="submit" type="submit" name="submit" value="Sign Up">
+   </form>
+
+</div>
+</body>
+
+</html>
